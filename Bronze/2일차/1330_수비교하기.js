@@ -13,3 +13,5 @@ if (A > B) {
 } else if (A == B) {
   console.log("==");
 }
+
+/* 단순한 조건문 분기 */
