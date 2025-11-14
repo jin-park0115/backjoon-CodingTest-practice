@@ -17,4 +17,17 @@ if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
   빼이 성공!
 
   시간 104ms
+
+  const fs = require("fs");
+  const input = fs.readFileSync().toString().trim("");
+
+  const year = Number(input);
+
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    console.log("1");
+  } else {
+    console.log("0");
+  }
+
+  런타임 에러 뜨길래 뭐지 했는데. readFileSync에 0, utf-8을 안넣었었다.
 */
