@@ -5,7 +5,7 @@ const T = parseInt(input[0]);
 
 for (let i = 1; i < 1 + T; i++) {
   const [a, b] = input[i].split(" ").map(Number);
-  console.log(`Case #${input[i]}: ${a + b}`);
+  console.log(`Case #${i}: ${a + b}`);
 }
 
 /*
@@ -26,4 +26,6 @@ for (let i = 1; i < 1 + T; i++) {
   }
 
   // 마지막에 한 번에 출력 (console.log를 한 번만 사용하여 성능 향상)
+
+  근데 코드 이상한거 같음, 8번째줄 input[i]? 아인거 같다, 그냥 i로 하는게 맞는 듯
 */
